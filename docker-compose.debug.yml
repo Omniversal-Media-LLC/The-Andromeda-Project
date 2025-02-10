@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  theandromedaproject:
+    image: theandromedaproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+  nextcloud-debug:
+    build:
+      context: ./Nextcloud
+      dockerfile: Dockerfile
+    environment:
+      - DEBUG_MODE=true
+
+  jupyterlab-debug:
+    build:
+      context: ./jupyterlab
+      dockerfile: Dockerfile
+    environment:
+      - DEBUG_MODE=true

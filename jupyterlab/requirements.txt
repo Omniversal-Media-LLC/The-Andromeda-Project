@@ -1,0 +1,13 @@
+# The following are the contents for the file: /The-Andromeda-Project/The-Andromeda-Project/jupyterlab/requirements.txt
+
+jupyterlab
+notebook
+ipywidgets
+matplotlib
+pandas
+scikit-learn
+seaborn
+requests
+beautifulsoup4
+tensorflow
+torch

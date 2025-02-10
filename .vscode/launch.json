@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "docker",
+            "request": "launch",
+            "name": "Launch Docker Compose",
+            "dockerComposeFile": "${workspaceFolder}/docker-compose.debug.yml",
+            "service": "theandromedaproject",
+            "preLaunchTask": "docker-compose-up"
+        }
+    ]
+}
